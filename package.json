@@ -1,0 +1,25 @@
+{
+  "name": "bookapi",
+  "version": "1.0.0",
+  "description": "\"users and books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/po1sigala/reactfullstack.git"
+  },
+  "author": "alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/po1sigala/reactfullstack/issues"
+  },
+  "homepage": "https://github.com/po1sigala/reactfullstack#readme",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "concurrently": "^8.2.2",
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  }
+}
