@@ -4,11 +4,18 @@ const {ApolloServer}=require("@apollo/server")
 const {expressMiddleware}=require("@apollo/server/express4")
 const {typeDefs, resolvers}=require("./schemas")
 const PORT=process.env.PORT||3001
-const db=require("./config")
+const {authMiddleware}=require("./utils/auth")
+
+
+const db=require("./config/connection")
+
+
 const server= new ApolloServer({
     typeDefs,
     resolvers
 })
+
+
 const app=express()
 
 const startApollo= async ()=>{
